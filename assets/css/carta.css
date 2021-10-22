@@ -123,11 +123,26 @@ p{
 }
 .cardPlato:hover{
     background-color: #C4C4C4;
+    transition: 0.4s;
 }
 .cardPlato:hover .imagenPlato{
     display: none;
 }
 .cardPlato:hover .botonEditar{
     display: flex;
+    height: 45%;
+    transition: 0.4s;
+}
+.cardPlato:hover .tituloPlato{
+    color: white;
+    transition: 0.4s;
+}
+.cardPlato:hover .descripcionPlato p{
+    color: white !important;
+    transition: 0.4s;
+}
+.cardPlato:hover .precioPlato p{
+    color: white !important;
+    transition: 0.4s;
 }
 
