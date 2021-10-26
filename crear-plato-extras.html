@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/css/crear-plato-personalizacion.css">
+    <link href="https://unpkg.com/filepond@^4/dist/filepond.css" rel="stylesheet" />
+    <link rel="stylesheet" href="./node_modules/bootstrap-icons/font/bootstrap-icons.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-uWxY/CJNBR+1zjPWmfnSnVxwRheevXITnMqoEIeG1LJrdI0GlVs/9cVSyPYXdcSF" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-kQtW33rZJAHjgefvhyyzcGF3C5TFyBQBA13V1RKPf4uH+bwyzQxZ6CmMZHmNBEfJ" crossorigin="anonymous"></script>
+
+    <title>Plataforma Restaurantes</title>
+</head>
+<body>
+
+    <div class="d-flex">
+        <div class="sidebar sticky-top bg-blue text-center p-2">
+            <img class="my-4 shadow" src="./assets/img/logo-restaurante.png" alt="">
+            <div class="text-start">
+                <ul>
+                    <li class="my-4">
+                        <a class="mx-2" href="index.html"> 
+                            <i style="font-size: 22px;" class="bi bi-house-door-fill mx-1"></i>    
+                            Inicio
+                        </a>
+                    </li>
+                    <li  class="my-4">
+                        <a class="mx-2" href="index.html">
+                            <i style="font-size: 22px;" class="bi bi-person-circle mx-1"></i>     
+                            Personal
+                        </a>
+                    </li>
+                    <li  class="my-4">
+                        <a class="mx-2" href="index.html">
+                        <i style="font-size: 22px;"  class="bi bi-currency-dollar mx-1"></i>
+                            Contabilidad
+                        </a>
+
+                    </li>
+                    <li  class="seleccion my-4">
+                        <a class="mx-2" href="index.html">
+                            <i style="font-size: 22px;"  class="bi bi-list-task mx-1"></i>     
+                            Carta
+                        </a>
+                        <div class="borde"></div>
+
+                    </li>
+                    <li  class="my-4">
+                        <a class="mx-2" href="index.html"> 
+                            <i style="font-size: 22px;"  class="bi bi-gear-fill mx-1"></i>    
+                            Configuración
+                        </a>
+                    </li>
+
+                </ul>
+            </div>
+
+        </div>
+        <div class="contenedor p-4 ">
+            <nav class="navbar navbar-light border-bottom border-secondary">
+                <div class="container-fluid">
+                    <nav aria-label="breadcrumb">
+                        <ol class="breadcrumb">
+                          <li class="breadcrumb-item"><a href="#">El Laurel</a></li>
+                          <li class="breadcrumb-item active" aria-current="page">Personal</li>
+                        </ol>
+                      </nav>
+                      
+                  <div class="d-flex">
+                      <img class="rounded-circle mx-2 imagenUsuario" src="./assets/img/mujer1.jpg" alt="">
+                      <div class="dropdown">
+                        <button class="btn dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                          Administrador
+                        </button>
+                        <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                          <li><a class="dropdown-item" href="#">Configuración</a></li>
+                          <li><a class="dropdown-item" href="#">Calificaciones</a></li>
+                          <li><a class="dropdown-item" href="#">Salir</a></li>
+                        </ul>
+                      </div>
+                  </div>
+                </div>
+            </nav>
+            <div class="contenido mt-4 p-2 d-block">
+                <div>
+                    <a href="">
+                        <i class="bi bi-chevron-left"></i>
+                        Volver
+                    </a>
+                </div>
+                <div class="p-4 fw-bold text-primary">
+                    Crea un nuevo plato
+                </div>
+                <div class="d-flex">
+                    <div class="col-md-4">
+                        <div class="navCrearPlato p-4">
+                            <ul class="p-0">
+                                <li class="navItem my-2">
+                                    <div class="navSelectCrearPlatoCheck p-2">
+                                        <div class="p-1">
+                                            <i class="bi bi-check-circle fs-2"></i>
+                                        </div>
+                                        <div>
+                                            <span>Paso 1</span>
+                                            <p>Información principal</p>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="navItem my-2">
+                                    <div class="navSelectCrearPlatoCheck p-2">
+                                        <div class="p-1">
+                                            <i class="bi bi-check-circle fs-2"></i>
+                                        </div>
+                                        <div>
+                                            <span>Paso 2</span>
+                                            <p>Personalización</p>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="navItem my-2">
+                                    <div class="navSelectCrearPlato p-2">
+                                        <span>Paso 3</span>
+                                        <p>Extras</p>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-md-8">
+                        <div class="border-start p-4 formCrearPlato">
+                            <form>
+                                <div class="formItem mb-3">
+                                    <label for="exampleInputEmail1" class="form-label fw-bold">Agregar un extra</label>
+                                </div>
+                                <div class="d-flex justify-content-between">
+                                    <div class="col-md-6 pe-1">
+                                        <input placeholder="Escribe aqui el nombre del extra" class="form-control  fst-italic fw-lighter" type="text">
+                                    </div>
+                                    <div class="col-md-6 ps-1">
+                                        <input placeholder="Escribe aqui el precio del extra" class="form-control  fst-italic fw-lighter" type="text">
+                                    </div>
+                                </div>
+                                <div>
+                                    <button class="form-control btn btn-primary my-2 text-start">
+                                        <i class="bi bi-plus-lg"></i>
+                                        Agregar mas opciones
+                                    </button>
+                                </div>
+                            </form>
+                        </div>
+                        <div class="justify-content-end d-flex">
+                            <div class="btn btn-danger mx-2">
+                                Cancelar
+                            </div>
+
+                            <div class="btn btn-success">
+                                Guardar
+                            </div>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+                     
+        </div>
+
+    </div>
+
+<script src="index.js"></script>
+    
+</body>
+</html>
