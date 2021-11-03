@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/css/personal-usuario-info.css">
+    <link rel="stylesheet" href="./node_modules/bootstrap-icons/font/bootstrap-icons.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-uWxY/CJNBR+1zjPWmfnSnVxwRheevXITnMqoEIeG1LJrdI0GlVs/9cVSyPYXdcSF" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-kQtW33rZJAHjgefvhyyzcGF3C5TFyBQBA13V1RKPf4uH+bwyzQxZ6CmMZHmNBEfJ" crossorigin="anonymous"></script>
+
+    <title>Plataforma Restaurantes</title>
+</head>
+<body>
+
+    <div class="d-flex">
+        <div class="sidebar sticky-top bg-blue text-center p-2">
+            <img class="my-4 shadow" src="./assets/img/logo-restaurante.png" alt="">
+            <div class="text-start">
+                <ul>
+                    <li class="my-4">
+                        <a class="mx-2" href="index.html"> 
+                            <i style="font-size: 22px;" class="bi bi-house-door-fill mx-1"></i>    
+                            Inicio
+                        </a>
+                    </li>
+                    <li  class="seleccion my-4">
+                        <a class="mx-2" href="personal.html">
+                            <i style="font-size: 22px;" class="bi bi-person-circle mx-1"></i>     
+                            Personal
+                        </a>
+                        <div class="borde"></div>
+                    </li>
+                    <li  class="my-4">
+                        <a class="mx-2" href="contabilidad.html">
+                        <i style="font-size: 22px;"  class="bi bi-currency-dollar mx-1"></i>
+                            Contabilidad
+                        </a>
+                    </li>
+                    <li  class="my-4">
+                        <a class="mx-2" href="carta.html">
+                            <i style="font-size: 22px;"  class="bi bi-list-task mx-1"></i>     
+                            Carta
+                        </a>
+                    </li>
+                    <li  class="my-4">
+                        <a class="mx-2" href="configuracion.html"> 
+                            <i style="font-size: 22px;"  class="bi bi-gear-fill mx-1"></i>    
+                            Configuración
+                        </a>
+                    </li>
+
+                </ul>
+            </div>
+
+        </div>
+        <div class="contenedor p-4 ">
+            <nav class="navbar navbar-light border-bottom border-secondary">
+                <div class="container-fluid">
+                    <nav aria-label="breadcrumb">
+                        <ol class="breadcrumb">
+                          <li class="breadcrumb-item"><a href="#">El Laurel</a></li>
+                          <li class="breadcrumb-item active" aria-current="page">Personal</li>
+                        </ol>
+                      </nav>
+                      
+                  <div class="d-flex">
+                      <img class="rounded-circle mx-2 imagenUsuario" src="./assets/img/mujer1.jpg" alt="">
+                      <div class="dropdown">
+                        <button class="btn dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                          Administrador
+                        </button>
+                        <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                          <li><a class="dropdown-item" href="#">Configuración</a></li>
+                          <li><a class="dropdown-item" href="#">Calificaciones</a></li>
+                          <li><a class="dropdown-item" href="#">Salir</a></li>
+                        </ul>
+                      </div>
+                  </div>
+                </div>
+            </nav>
+            <div class="contenido mt-4 p-2 d-flex">
+                
+                    <div class="seccionUno p-2">
+                        <div class="card shadow">
+                            <div class="card-header bg-white border-0">
+                                <div class="text-center my-3">
+                                    <img class="imagenUsuarioInfo rounded-circle" src="./assets/img/mujer1.jpg" alt="">
+                                    <div class="iconoCamara position-absolute col-12">
+                                        <a href="">
+                                            <i class=" bi bi-camera-fill text-white bg-primary rounded-circle"></i>
+                                        </a>
+                                    </div>
+                                    <div class="my-2">
+                                        <h5>
+                                            Jose Mendez
+                                        </h5>
+                                        <p class="text-secondary">Mesero</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card-body">
+                                <div>
+                                    <ul class="p-0">
+                                        <li class="d-flex my-2">
+                                            <div class="col-md-6 d-flex">
+                                                <i class="bi bi-file-earmark-text-fill"></i>
+                                                <p class="mx-2">Contrato fijo</p>
+                                            </div>
+                                            <div class="col-md-6 d-flex justify-content-end">
+                                                <i class="bi bi-shuffle text-success"></i>
+                                            </div>
+                                        </li>
+                                        <li class="d-flex my-2">
+                                            <div class="col-md-6 d-flex">
+                                                <i class="bi bi-telephone-fill"></i>
+                                                <p class="mx-2">Contacto</p>
+                                            </div>
+                                            <div class="col-md-6 d-flex justify-content-end">
+                                                <a href="">
+                                                    +347813746
+                                                </a>
+                                            </div>
+                                        </li>
+                                        <li class="d-flex my-2">
+                                            <div class="col-md-6 d-flex">
+                                                <i class="bi bi-person-bounding-box"></i>
+                                                <p class="mx-2">Status</p>
+                                            </div>
+                                            <div class="col-md-6 d-flex justify-content-end text-success">
+                                                <p>
+                                                    Activo
+                                                </p>
+                                            </div>
+                                        </li>
+                                        <li class="d-flex my-2">
+                                            <div class="col-md-6 d-flex">
+                                                <i class="bi bi-bar-chart-steps"></i>
+                                                <p class="mx-2">Calificación promedio</p>
+                                            </div>
+                                            <div class="col-md-6 d-flex justify-content-end">
+                                                <i class="bi bi-star-fill text-warning"></i>
+                                                <i class="bi bi-star-fill text-warning"></i>
+                                                <i class="bi bi-star-fill text-warning"></i>
+                                                <i class="bi bi-star-fill text-warning"></i>
+                                                <i class="bi bi-star-fill text-warning"></i>
+
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="seccionDos p-2">
+                        <div class="card shadow">
+                            <div class="card-header bg-white">
+                                <nav class="navegadorUsuario navbar navbar-expand-lg navbar-light">
+                                    <div class="container-fluid p-0">
+                                      <a class="navbar-brand border-bottom border-primary" href="personal-usuario-info.html">Información personal</a>
+                                      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                                        <span class="navbar-toggler-icon"></span>
+                                      </button>
+                                      <div class="collapse navbar-collapse" id="navbarNav">
+                                        <ul class="navbar-nav">
+                                          <li class="nav-item">
+                                            <a class="nav-link active" aria-current="page" href="personal-usuario-calificaciones.html">Calificaciones y comentarios</a>
+                                          </li>
+                                          <li class="nav-item">
+                                            <a class="nav-link" href="personal-usuario-documentos.html">Documentos y certificaciones</a>
+                                          </li>
+                                          <li class="nav-item">
+                                            <a class="nav-link" href="personal-usuario-horarios.html">Horario</a>
+                                          </li>
+                                          
+                                        </ul>
+                                      </div>
+                                    </div>
+                                  </nav>
+                            </div>
+                            <div class="card-body">
+                                <div class="d-flex">
+                                    <div class="col-md-3 formText">
+                                        <p class="text-secondary fw-normal">Nombres</p>
+                                        <h6>Jose Maria</h6>
+                                    </div>
+                                    <div class="col-md-4 formText">
+                                        <p class="text-secondary fw-normal">Apellidos</p>
+                                        <h6>Mendez Serrano</h6>
+                                    </div>
+                                    <div class="col-md-5 formText">
+                                        <p class="text-secondary fw-normal">Identificación</p>
+                                        <h6>DNI 746167317646 Madrid, España</h6>
+                                    </div>
+                                </div>
+                                <div class="d-flex my-2">
+                                    <div class="col-md-7 formText">
+                                        <p class="text-secondary fw-normal">Dirección de residencia</p>
+                                        <h6>Calle Triana, 15, 41410, Carmona Sevilla, Sevilla</h6>
+                                    </div>
+                                    
+                                    <div class="col-md-5 formText">
+                                        <p class="text-secondary fw-normal">Telefonos de contacto</p>
+                                        <h6>+34 785 13748 278</h6>
+                                    </div>
+                                </div>
+                                <div class="d-flex my-2">
+                                    <div class="col-md-7 formText">
+                                        <p class="text-secondary fw-normal">Correo electronico</p>
+                                        <h6>josemaria@micorreo.com</h6>
+                                    </div>
+                                    
+                                    <div class="col-md-5 formText">
+                                        <p class="text-secondary fw-normal">Fecha de nacimiento</p>
+                                        <h6>23/05/1991 Madrid, España</h6>
+                                    </div>
+                                </div>
+                                <div>
+                                    <div class="formText">
+                                        <p class="text-secondary fw-normal">Experiencia laboral</p>
+                                        <h6>Restaurante Juana Mari    2018-2020 Mesero</h6>
+                                        <h6>Restaurante Come Sano    2016-2018  Mesero</h6>
+                                        <h6>Restaurante Pizzeria Excalibour    2016-2018  Mesero y auxiliar de cocina</h6>
+
+                                    </div>
+                                </div>
+                                
+                            </div>
+                            <div class="d-flex justify-content-end p-4">
+                                <div class="btn btn-primary align-self-end">
+                                    <i class="bi bi-pen-fill"></i>
+                                    Editar información
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+            </div>
+                     
+        </div>
+
+    </div>
+
+
+    
+</body>
+</html>
