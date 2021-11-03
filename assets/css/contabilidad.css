@@ -37,6 +37,7 @@ p{
     width: calc(100% - 230px);
 }
 
+
 .seleccion{
     background-color: white;
     border-radius: 3px;
@@ -97,7 +98,9 @@ p{
 .imagenUsuario p{
     font-size: 18px;
 }
-.table{
-    border-collapse: inherit;
-    
+.contenedorTabla {
+    height: 470px;
+    overflow-y: auto;
 }
+
+
