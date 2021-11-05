@@ -1,0 +1,91 @@
+body{
+    font-family: 'Rubik', sans-serif;
+    overflow-x: hidden;
+}
+a{
+    text-decoration: none !important;
+}
+p{
+    margin-bottom: 0px !important;
+}
+ul{
+    list-style: none;
+    
+}
+.sidebar{
+    height: 100vh;
+    border-radius: 0px 10px 10px 0px;
+    width: 230px;
+}
+
+.sidebar img{
+    width: 120px;
+    border-radius: 50%;
+    border: 1px solid gray;
+}
+.sidebar ul{
+    padding-left: 0px;
+    padding: 5px;
+}
+.sidebar li{
+    list-style: none;
+    padding: 10px;
+}
+.sidebar a{
+    text-decoration: none;
+    color:  white;
+    font-size: 18px;
+}
+
+.contenedor{
+    width: calc(100% - 230px);
+}
+
+.seleccion{
+    background-color: white;
+    border-radius: 3px;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    
+}
+.seleccion a{
+    color: #18A0FB;
+    
+}
+.borde{
+    position: absolute;
+    width: 5px;
+    height: 52px;
+    border-radius: 1px;
+    left: -10px;
+    top: 0px;
+    background: #FFFFFF;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.bg-blue{
+    background-color: #18A0FB;
+}
+
+.texto-1{
+    font-size: 40px;
+}
+.imagenUsuario{
+    width: 40px;
+}
+.estadoContratoUsuario {
+    font-size: 12px;
+}
+tbody tr{
+    vertical-align: text-bottom;
+
+}
+.imagenUsuarioInfo{
+    width: 120px;
+}
+.listadoPedidosCocina{
+    height: 600px;
+    overflow-y: auto;
+}
+
+
+
