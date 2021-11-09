@@ -14,7 +14,7 @@
 <body>
 
     <div class="d-flex">
-        <div class="sticky-top sidebar bg-blue text-center p-2 ">
+        <div class="sticky-top sidebar-lg bg-blue text-center p-2 ">
             <img class="my-4 shadow" src="./assets/img/logo-restaurante.png" alt="">
 
             <div class="text-start">
@@ -55,71 +55,130 @@
             </div>
 
         </div>
-        <div class="contenedor p-4 ">
-            <nav class="navbar navbar-light border-bottom border-secondary">
+        <div class="sticky-top sidebar-sm bg-blue text-center p-2 ">
+            <img class="my-4 shadow" src="./assets/img/logo-restaurante.png" alt="">
+
+            <div class="navSidebarSm">
+                <ul class="p-0">
+                    <li class="seleccion my-4 ">
+                        <a class="mx-2" href="index.html"> 
+                            <i class="bi bi-house-door-fill mx-1"></i>    
+                            
+                        </a>
+                        <div class="borde"></div>
+                    </li>
+                    <li  class="my-4">
+                        <a class="mx-2" href="personal.html">
+                            <i class="bi bi-person-circle mx-1"></i>     
+                            
+                        </a>
+                    </li>
+                    <li  class="my-4">
+                        <a class="mx-2" href="contabilidad.html">
+                        <i  class="bi bi-currency-dollar mx-1"></i>
+                            
+                        </a>
+                    </li>
+                    <li  class="my-4">
+                        <a class="mx-2" href="carta.html">
+                            <i  class="bi bi-list-task mx-1"></i>     
+                            
+                        </a>
+                    </li>
+                    <li  class="my-4">
+                        <a class="mx-2" href="configuracion.html"> 
+                            <i  class="bi bi-gear-fill mx-1"></i>    
+                            
+                        </a>
+                    </li>
+
+                </ul>
+            </div>
+
+        </div>
+        <div class="contenedor">
+            <nav class="navbar navbar-expand-lg navbar-light">
                 <div class="container-fluid">
-                    <nav aria-label="breadcrumb">
+                  <div class="navbar-brand">
+                      <nav aria-label="breadcrumb">
                         <ol class="breadcrumb">
                           <li class="breadcrumb-item"><a href="#">El Laurel</a></li>
                           <li class="breadcrumb-item active" aria-current="page">Inicio</li>
                         </ol>
                       </nav>
-                  <div class="d-flex">
-                      <img class="rounded-circle mx-2 imagenUsuario" src="./assets/img/mujer1.jpg" alt="">
-                      <div class="dropdown">
-                        <button class="btn dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
-                          Administrador
-                        </button>
-                        <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-                          <li><a class="dropdown-item" href="#">Configuración</a></li>
-                          <li><a class="dropdown-item" href="#">Calificaciones</a></li>
-                          <li><a class="dropdown-item" href="#">Salir</a></li>
-                        </ul>
-                      </div>
+                  </div>
+                  <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+                    <img class="navbar-toggler-icon border-0 rounded-circle mx-2 imagenUsuario" src="./assets/img/mujer1.jpg" alt="">                    
+                  </button>
+                  <div class="collapse navbar-collapse justify-content-end" id="navbarText">
+                    <div class="d-flex justify-content-end">
+                        <img class="rounded-circle mx-2 imagenUsuarioLg" src="./assets/img/mujer1.jpg" alt="">
+
+                        <div class="dropdown">
+                          <button class="btn dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                            Administrador
+                          </button>
+                          <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                            <li><a class="dropdown-item" href="#">Configuración</a></li>
+                            <li><a class="dropdown-item" href="#">Calificaciones</a></li>
+                            <li><a class="dropdown-item" href="#">Salir</a></li>
+                          </ul>
+                        </div>
+                    </div>
                   </div>
                 </div>
-            </nav>
+              </nav>
             <div class="contenido mt-4">
-                <div class="d-flex">
-                    <div class="cardDashboard1 my-2">
+                <div class="contenedorCards">
+                    <div class="cardDashboard1">
                         <div class=" bg-white p-2 card shadow">
-                            <div style="border-bottom: 0px;" class="card-header p-2 align-items-center bg-white d-flex">
-                                <div class="col-md-6">
-                                    <h6>
-                                        Reporte de ventas
-                                    </h6>
-                                </div>
-                                <div class="col-md-3 align-items-center d-flex">
-                                    <div class="d-flex mx-2 mt-2 align-self-center indicadorUno">
-                                        <i style="font-size: x-small; color: #FA6525;" class="bi bi-circle-fill p-1"></i>
-                                        <p>
-                                            Efectivo
-                                        </p>
-                                    </div>
-                                    <div class="d-flex mx-2 mt-2 align-self-center indicadorUno">
-                                        <i style="font-size: x-small; color: #18A0FB;" class="bi bi-circle-fill p-1"></i>
-                                        <p>
-                                            Tarjeta
-                                        </p>
-                                    </div>
-                                </div>
-                                <div class="col-md-3">
-                                    <div class="dropdown float-end">
-                                        <button class="btn btn-light dropdown-toggle shadow-sm" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
-                                          21 días
-                                        </button>
-                                        <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-                                          <li><a class="dropdown-item" href="#">7 días</a></li>
-                                          <li><a class="dropdown-item" href="#">13 días</a></li>
-                                          <li><a class="dropdown-item" href="#">21 días</a></li>
+                            <div style="border-bottom: 0px;" class="card-header p-2  bg-white d-flex">
+                                <nav style="width: 100%;" class="navbar navbar-expand-lg navbar-light">
+                                    <div class="container-fluid">
+                                      <a class="navbar-brand" href="#">Reporte de ventas</a>
+                                      <button class="navbar-toggler " type="button" data-bs-toggle="collapse" data-bs-target="#navbarText1" aria-controls="navbarText1" aria-expanded="false" aria-label="Toggle navigation">
+                                        <span class="navbar-toggler-icon"></span>
+                                      </button>
+                                      <div class="collapse navbar-collapse justify-content-end" id="navbarText1">
+                                        <ul class="navbar-nav mb-2 mb-lg-0 align-items-end">
+                                          <li class="nav-item d-flex">
+                                            <a class="text-black active" aria-current="page" href="#">
+                                                <div class="d-flex mx-2 mt-2 align-self-center indicadorUno">
+                                                    <i style="font-size: x-small; color: #FA6525;" class="bi bi-circle-fill p-1"></i>
+                                                    <p>
+                                                        Efectivo
+                                                    </p>
+                                                </div>
+                                            </a>
+                                            <a class="text-black" href="#">
+                                                <div class="d-flex mx-2 mt-2 align-self-center indicadorUno">
+                                                    <i style="font-size: x-small; color: #18A0FB;" class="bi bi-circle-fill p-1"></i>
+                                                    <p>
+                                                        Tarjeta
+                                                    </p>
+                                                </div>
+                                            </a>
+                                            <div class="dropdown me-2">
+                                                <button class="btn btn-light dropdown-toggle shadow-sm" type="button" id="dropdownMenuButton2" data-bs-toggle="dropdown" aria-expanded="false">
+                                                    21 días
+                                                </button>
+                                                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton2">
+                                                    <li><a class="dropdown-item" href="#">7 días</a></li>
+                                                    <li><a class="dropdown-item" href="#">13 días</a></li>
+                                                    <li><a class="dropdown-item" href="#">21 días</a></li>
+                                                </ul>
+                                            </div>
+                                            
+                                          </li>
                                         </ul>
                                       </div>
-                                </div>
+                                      
+                                    </div>
+                                  </nav>
                             </div>
                         </div>
                     </div>
-                    
-                    <div class="my-2 cardDashboard2">
+                    <div class="cardDashboard2">
                         <div class="card p-2 shadow">
                             <div style="border-bottom: 0px;" class="card-header p-2 align-items-center bg-white d-flex">
                                 <div class="py-3">
@@ -204,8 +263,8 @@
                         </div>
                     </div>
                 </div>
-                <div class="d-flex mt-3 p-2">
-                    <div class="col-md-4 mx-2 d-flex">
+                <div class="mt-3 p-2 contenedorMetricas">
+                    <div class="metrica mx-2 d-flex">
                         <div class="col-md-4">
                             <div style="width: 100px; height: 100px;" class="bg-primary rounded-circle text-center py-4 shadow">
                                 <svg style="width:44px;height:44px; color: white;" viewBox="0 0 24 24">
@@ -238,7 +297,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-4 mx-2 d-flex">
+                    <div class="metrica mx-2 d-flex">
                         <div class="col-md-4">
                             <div style="width: 100px; height: 100px;" class="bg-primary rounded-circle text-center py-3 shadow">
                                 <i style="font-size: 44px;" class="bi bi-currency-dollar text-white"></i>
@@ -253,7 +312,7 @@
                             <div class="d-flex align-items-end">
                                 <div class="col-md-10">
                                     <p class="texto-1" style="font-size: 40px;">
-                                        2.389 €
+                                        2.38 €
                                     </p>
                                 </div>
                                 <div class="col-md-4 text-success d-flex py-3">
@@ -269,7 +328,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-4 mx-2 d-flex">
+                    <div class="metrica mx-2 d-flex">
                         <div class="col-md-4">
                             <div style="width: 100px; height: 100px;" class="bg-primary rounded-circle text-center py-3 shadow">
                                 <i style="font-size: 44px;" class="bi bi-info-circle-fill text-white"></i>
@@ -301,8 +360,8 @@
                         </div>
                     </div>
                 </div>
-                <div class="d-flex">
-                    <div class="col-md-7 p-2">
+                <div class="contenedorCards">
+                    <div class="cardDashboard3">
                         <div class="card p-2 shadow">
                             <div class="card-header bg-white d-flex justify-content-between align-items-center">
                                 <h6>
@@ -324,7 +383,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-5 p-2">
+                    <div class="cardDashboard4">
                         <div class="card p-2 shadow">
                             <div class="card-header bg-white d-flex justify-content-between align-items-center">
                                 <h6>
