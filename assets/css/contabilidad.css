@@ -59,14 +59,9 @@ ul{
 .contenido{
     width: 100%;
     display: block;
+    height: 100vh;
 }
 
-.card-header{
-    border-bottom: none !important;
-}
-.card-body li{
-    list-style: none;
-}
 
 .imagenUsuarioLg{
     display: none;
@@ -80,44 +75,9 @@ ul{
 }
 
 
-.imagenUsuarioInfo{
-    width: 120px;
-}
-
-.iconoCamara{
-    margin-top: -20px;
-    margin-left: 20px;
-}
-.iconoCamara i{
-    border: 2px solid white;
-    font-size: 15px;
-    padding-bottom: 3px;
-    padding-left: 4px;
-    padding-right: 4px;
-    padding-top: 3px;
-}
-.card-body i{
-    width: 20px;
-}
-.navegadorUsuario a{
-    font-size: 13px;
-}
-
-.seccionUno{
-    width: 100%;
-}
-.seccionUno .card-body p{
-    font-size: 14px;
-}
-.seccionUno .card-body a{
-    font-size: 14px;
-}
-.seccionDos{
-    width: 100%;
-}
-
-.card{
-    height: 100%;
+.contenedorTabla {
+    height: 65%;
+    overflow-y: auto;
 }
 
 
@@ -181,13 +141,7 @@ ul{
         width: 40px;
     }
     
-    .seccionUno{
-        width: 320px;
-    }
-    .seccionDos{
-        width: calc(100% - 320px);
-        height: 490px;
-    }
+    
     
 
 
@@ -211,45 +165,6 @@ ul{
 
 
 
-.cardDashboard1 {
-    margin: 10px;
-    width: 70%;
-}
-.cardDashboard1 .card{
-    overflow-y: hidden;
-    height: 320px;
 
-}
-.cardDashboard2 {
-    margin: 10px;
-    width: 30%;
-}
-.cardDashboard2 .card{
-    overflow-y: hidden;
-    height: 320px;
-
-}
-.indicadorUno p{
-    font-size: 15px;
-}
-.card-header{
-    border-bottom: none !important;
-}
-.card-body li{
-    list-style: none;
-}
-.texto-1{
-    font-size: 40px;
-}
-.imagenUsuario{
-    width: 40px;
-}
-.imagenUsuario p{
-    font-size: 18px;
-}
-.contenedorTabla {
-    height: 470px;
-    overflow-y: auto;
-}
 
 
