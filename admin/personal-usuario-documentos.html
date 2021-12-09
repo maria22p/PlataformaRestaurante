@@ -1,10 +1,10 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./assets/css/personal-usuario-info.css">
+    <link rel="stylesheet" href="./assets/css/personal-usuario-documentos.css">
     <link rel="stylesheet" href="./node_modules/bootstrap-icons/font/bootstrap-icons.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-uWxY/CJNBR+1zjPWmfnSnVxwRheevXITnMqoEIeG1LJrdI0GlVs/9cVSyPYXdcSF" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-kQtW33rZJAHjgefvhyyzcGF3C5TFyBQBA13V1RKPf4uH+bwyzQxZ6CmMZHmNBEfJ" crossorigin="anonymous"></script>
@@ -13,48 +13,48 @@
 </head>
 <body>
 
-    <div class="d-flex">
-       <!-- sidebar escritorio inicio -->
-       <div class="sticky-top sidebar-lg bg-blue text-center p-2 ">
-        <img class="my-4 shadow" src="./assets/img/logo-restaurante.png" alt="">
-
-        <div class="text-start">
-            <ul>
-                <li class="my-4">
-                    <a class="mx-2" href="index.html"> 
-                        <i style="font-size: 22px;" class="bi bi-house-door-fill mx-1"></i>    
-                        Inicio
-                    </a>
-                </li>
-                <li  class="seleccion my-4">
-                    <a class="mx-2" href="personal.html">
-                        <i style="font-size: 22px;" class="bi bi-person-circle mx-1"></i>     
-                        Personal
-                    </a>
-                    <div class="borde"></div>
-                </li>
-                <li  class="my-4">
-                    <a class="mx-2" href="contabilidad.html">
-                    <i style="font-size: 22px;"  class="bi bi-currency-dollar mx-1"></i>
-                        Contabilidad
-                    </a>
-                </li>
-                <li  class="my-4">
-                    <a class="mx-2" href="carta.html">
-                        <i style="font-size: 22px;"  class="bi bi-list-task mx-1"></i>     
-                        Carta
-                    </a>
-                </li>
-                <li  class="my-4">
-                    <a class="mx-2" href="configuracion.html"> 
-                        <i style="font-size: 22px;"  class="bi bi-gear-fill mx-1"></i>    
-                        Configuración
-                    </a>
-                </li>
-
-            </ul>
-        </div>
-
+    <div class="d-flex overflow-hidden">
+        <!-- sidebar escritorio inicio -->
+        <div class="sticky-top sidebar-lg bg-blue text-center p-2 ">
+            <img class="my-4 shadow" src="./assets/img/logo-restaurante.png" alt="">
+    
+            <div class="text-start">
+                <ul>
+                    <li class="my-4">
+                        <a class="mx-2" href="index.html"> 
+                            <i style="font-size: 22px;" class="bi bi-house-door-fill mx-1"></i>    
+                            Inicio
+                        </a>
+                    </li>
+                    <li  class="seleccion my-4">
+                        <a class="mx-2" href="personal.html">
+                            <i style="font-size: 22px;" class="bi bi-person-circle mx-1"></i>     
+                            Personal
+                        </a>
+                        <div class="borde"></div>
+                    </li>
+                    <li  class="my-4">
+                        <a class="mx-2" href="contabilidad.html">
+                        <i style="font-size: 22px;"  class="bi bi-currency-dollar mx-1"></i>
+                            Contabilidad
+                        </a>
+                    </li>
+                    <li  class="my-4">
+                        <a class="mx-2" href="carta.html">
+                            <i style="font-size: 22px;"  class="bi bi-list-task mx-1"></i>     
+                            Carta
+                        </a>
+                    </li>
+                    <li  class="my-4">
+                        <a class="mx-2" href="configuracion.html"> 
+                            <i style="font-size: 22px;"  class="bi bi-gear-fill mx-1"></i>    
+                            Configuración
+                        </a>
+                    </li>
+    
+                </ul>
+            </div>
+    
         </div>
         <!-- sidebar escritorio fin -->
 
@@ -73,6 +73,7 @@
                         <a class="mx-1" href="personal.html">
                             <i class="bi bi-person-circle mx-1"></i>     
                         </a>
+                        <div class="borde"></div>
                     </li>
                     <li  class="my-4">
                         <a class="mx-1" href="contabilidad.html">
@@ -97,7 +98,7 @@
 
         </div>
         <!-- sidebar movil fin -->
-        <div class="contenedor p-lg-4">
+        <div class="contenedor  p-lg-4">
             <!-- navbar inicio -->
             <nav class="navbar navbar-expand-lg navbar-light sticky-top bg-white border-bottom">
                 <div class="container-fluid">
@@ -131,6 +132,7 @@
                 </div>
             </nav>
             <!-- navbar fin -->
+
             <div class="contenido mt-2">
                 
                     <div class="seccionUno p-2">
@@ -209,18 +211,18 @@
                         <div class="card shadow">
                             <div class="card-header bg-white">
                                 <nav class="navegadorUsuario navbar navbar-expand-lg navbar-light">
-                                    <div class="container-fluid p-0 d-flex">
-                                      <a class="navbar-brand border-bottom border-primary" href="personal-usuario-info.html">Información personal</a>
+                                    <div class="container-fluid p-0">
+                                      <a class="navbar-brand" href="personal-usuario-info.html">Información personal</a>
                                       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                                         <span class="navbar-toggler-icon"></span>
                                       </button>
                                       <div class="collapse navbar-collapse" id="navbarNav">
                                         <ul class="navbar-nav">
                                           <li class="nav-item">
-                                            <a class="nav-link active" aria-current="page" href="personal-usuario-calificaciones.html">Calificaciones y comentarios</a>
+                                            <a class="nav-link" aria-current="page" href="personal-usuario-calificaciones.html">Calificaciones y comentarios</a>
                                           </li>
-                                          <li class="nav-item">
-                                            <a class="nav-link" href="personal-usuario-documentos.html">Documentos y certificaciones</a>
+                                          <li class="nav-item ">
+                                            <a class="nav-link  active border-bottom border-primary" href="personal-usuario-documentos.html">Documentos y certificaciones</a>
                                           </li>
                                           <li class="nav-item">
                                             <a class="nav-link" href="personal-usuario-horarios.html">Horario</a>
@@ -232,61 +234,63 @@
                                   </nav>
                             </div>
                             <div class="card-body">
-                                <div class="contenedorListadoInformacion">
-                                    <div class="listadoInformacion formText">
-                                        <p class="text-secondary fw-normal">Nombres</p>
-                                        <h6>Jose Maria</h6>
-                                    </div>
-                                    <div class="listadoInformacion formText">
-                                        <p class="text-secondary fw-normal">Apellidos</p>
-                                        <h6>Mendez Serrano</h6>
-                                    </div>
-                                    <div class="listadoInformacion formText">
-                                        <p class="text-secondary fw-normal">Identificación</p>
-                                        <h6>DNI 746167317646 Madrid, España</h6>
-                                    </div>
-                                    <div class="listadoInformacion formText">
-                                        <p class="text-secondary fw-normal">Dirección de residencia</p>
-                                        <h6>Calle Triana, 15, 41410, Carmona Sevilla, Sevilla</h6>
-                                    </div>
-                                    <div class="listadoInformacion formText">
-                                        <p class="text-secondary fw-normal">Telefonos de contacto</p>
-                                        <h6>+34 785 13748 278</h6>
-                                    </div>
-                                    <div class="listadoInformacion formText">
-                                        <p class="text-secondary fw-normal">Correo electronico</p>
-                                        <h6>josemaria@micorreo.com</h6>
-                                    </div>
-                                    <div class="listadoInformacion formText">
-                                        <p class="text-secondary fw-normal">Correo electronico</p>
-                                        <h6>josemaria@micorreo.com</h6>
-                                    </div>
-                                    <div class="listadoInformacion formText">
-                                        <p class="text-secondary fw-normal">Fecha de nacimiento</p>
-                                        <h6>23/05/1991 Madrid, España</h6>
-                                    </div>
-                                </div>
-
-                                <div class="d-flex my-2">
-                                    
-                                    
-                                    
-                                </div>
                                 <div>
-                                    <div class="formText">
-                                        <p class="text-secondary fw-normal">Experiencia laboral</p>
-                                        <h6>Restaurante Juana Mari    2018-2020 Mesero</h6>
-                                        <h6>Restaurante Come Sano    2016-2018  Mesero</h6>
-                                        <h6>Restaurante Pizzeria Excalibour    2016-2018  Mesero y auxiliar de cocina</h6>
-
-                                    </div>
+                                    <ul class="p-0">
+                                        <li class="d-flex my-2 justify-content-between">
+                                            <div>
+                                                <p>
+                                                    DNI
+                                                </p>
+                                            </div>
+                                            <div class="d-flex">
+                                                <i class="bi bi-file-earmark-fill text-primary mx-3"></i>
+                                                <i class="bi bi-three-dots-vertical"></i>
+                                            </div>
+                                            
+                                        </li>
+                                        <li class="d-flex my-2 justify-content-between">
+                                            <div>
+                                                <p>
+                                                    Certificación servicio al cliente Universidad de Alicanta
+                                                </p>
+                                            </div>
+                                            <div class="d-flex">
+                                                <i class="bi bi-file-earmark-fill text-primary mx-3"></i>
+                                                <i class="bi bi-three-dots-vertical"></i>
+                                            </div>
+                                            
+                                        </li>
+                                        <li class="d-flex my-2 justify-content-between">
+                                            <div>
+                                                <p>
+                                                    Certificación laboral  restaurante Come Sano                                                
+                                                </p>
+                                            </div>
+                                            <div class="d-flex">
+                                                <i class="bi bi-file-earmark-fill text-primary mx-3"></i>
+                                                <i class="bi bi-three-dots-vertical"></i>
+                                            </div>
+                                            
+                                        </li>
+                                        <li class="d-flex my-2 justify-content-between">
+                                            <div>
+                                                <p>
+                                                    Certificación laboral  restaurante Pizzeria Excalibour                                               
+                                                </p>
+                                            </div>
+                                            <div class="d-flex">
+                                                <i class="bi bi-file-earmark-fill text-primary mx-3"></i>
+                                                <i class="bi bi-three-dots-vertical"></i>
+                                            </div>
+                                        </li>
+                                    </ul>
                                 </div>
                                 
                             </div>
                             <div class="d-flex justify-content-end p-4">
                                 <div class="btn btn-primary align-self-end">
-                                    <i class="bi bi-pen-fill"></i>
-                                    Editar información
+                                    <i class="bi bi-cloud-upload"></i>
+                                    Agregar Documento
                                 </div>
                             </div>
                         </div>

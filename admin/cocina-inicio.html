@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -15,19 +15,21 @@
 <body>
 
     <div class="d-flex">
-        <div class="sidebar sticky-top bg-blue text-center p-2">
+        <!-- sidebar escritorio inicio -->
+        <div class="sticky-top sidebar-lg bg-blue text-center p-2 ">
             <img class="my-4 shadow" src="./assets/img/logo-restaurante.png" alt="">
+
             <div class="text-start">
                 <ul>
                     <li class="seleccion my-4">
-                        <a class="mx-2" href="cocina-inicio.html"> 
+                        <a class="mx-2" href="index.html"> 
                             <i style="font-size: 22px;" class="bi bi-house-door-fill mx-1"></i>    
                             Inicio
                         </a>
                         <div class="borde"></div>
                     </li>
                     <li  class="my-4">
-                        <a class="mx-2" href="cocina-carta.html">
+                        <a class="mx-2" href="carta.html">
                             <i style="font-size: 22px;"  class="bi bi-list-task mx-1"></i>     
                             Carta
                         </a>
@@ -36,31 +38,67 @@
             </div>
 
         </div>
+        <!-- sidebar escritorio fin -->
+
+        <!-- sidebar movil inicio -->
+        <div class="sticky-top sidebar-sm bg-blue text-center p-2 ">
+            <img class="my-4 shadow" src="./assets/img/logo-restaurante.png" alt="">
+
+            <div class="navSidebarSm">
+                <ul class="p-0">
+                    <li class="seleccion my-4 ">
+                        <a class="mx-1" href="index.html"> 
+                            <i class="bi bi-house-door-fill mx-1"></i>    
+                            
+                        </a>
+                    </li>
+
+                    <li  class="my-4">
+                        <a class="mx-1" href="carta.html">
+                            <i  class="bi bi-list-task mx-1"></i>     
+                            
+                        </a>
+                    </li>
+
+                </ul>
+            </div>
+
+        </div>
+        <!-- sidebar movil fin -->
         <div class="contenedor p-4 ">
-            <nav class="navbar navbar-light border-bottom border-secondary">
+            <!-- navbar inicio -->
+            <nav class="navbar navbar-expand-lg navbar-light border-bottom">
                 <div class="container-fluid">
-                    <nav aria-label="breadcrumb">
-                        <ol class="breadcrumb">
+                  <div class="navbar-brand">
+                      <nav aria-label="breadcrumb">
+                        <ol class="breadcrumb fs-6">
                           <li class="breadcrumb-item"><a href="#">El Laurel</a></li>
                           <li class="breadcrumb-item active" aria-current="page">Inicio</li>
                         </ol>
                       </nav>
-                      
-                  <div class="d-flex">
-                      <img class="rounded-circle mx-2 imagenUsuario" src="./assets/img/mujer1.jpg" alt="">
-                      <div class="dropdown">
-                        <button class="btn dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
-                          Cocina
-                        </button>
-                        <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-                          <li><a class="dropdown-item" href="#">Configuración</a></li>
-                          <li><a class="dropdown-item" href="#">Calificaciones</a></li>
-                          <li><a class="dropdown-item" href="#">Salir</a></li>
-                        </ul>
-                      </div>
+                  </div>
+                  <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+                    <img class="navbar-toggler-icon border-0 rounded-circle mx-2 imagenUsuario" src="./assets/img/mujer1.jpg" alt="">                    
+                  </button>
+                  <div class="collapse navbar-collapse justify-content-end" id="navbarText">
+                    <div class="d-flex justify-content-end">
+                        <img class="rounded-circle mx-2 imagenUsuarioLg" src="./assets/img/mujer1.jpg" alt="">
+
+                        <div class="dropdown">
+                          <button class="btn dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                            Cocina
+                          </button>
+                          <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                            <li><a class="dropdown-item" href="#">Configuración</a></li>
+                            <li><a class="dropdown-item" href="#">Calificaciones</a></li>
+                            <li><a class="dropdown-item" href="#">Salir</a></li>
+                          </ul>
+                        </div>
+                    </div>
                   </div>
                 </div>
             </nav>
+            <!-- navbar fin -->
             <div class="contenido mt-4 p-2 d-block">
                 <div class="listadoPedidosCocina">
                     <ul class="d-flex p-1 sticky-top bg-white">
@@ -85,8 +123,8 @@
                             </p>
                         </li>
                     </ul>
-                    <div>
-                        <div style="flex-direction: row;" class="card p-2 my-2">
+                    <div class="listadoPedidosCocinaCards">
+                        <div class="card p-2 my-2 flex-sm-column flex-md-row">
                             <div class="col-md-2">
                                 <p>
                                     HDB617389
@@ -165,7 +203,7 @@
                                 </button>
                             </div>
                         </div>
-                        <div style="flex-direction: row;" class="card p-2 my-2">
+                        <div class="card p-2 my-2 flex-sm-column flex-md-row">
                             <div class="col-md-2">
                                 <p>
                                     HDB617389
@@ -208,7 +246,7 @@
                                 </button>
                             </div>
                         </div>
-                        <div style="flex-direction: row;" class="card p-2 my-2">
+                        <div class="card p-2 my-2 flex-sm-column flex-md-row">
                             <div class="col-md-2">
                                 <p>
                                     HDB617389
@@ -251,7 +289,7 @@
                                 </button>
                             </div>
                         </div>
-                        <div style="flex-direction: row;" class="card p-2 my-2">
+                        <div class="card p-2 my-2 flex-sm-column flex-md-row">
                             <div class="col-md-2">
                                 <p>
                                     HDB617389
@@ -294,7 +332,7 @@
                                 </button>
                             </div>
                         </div>
-                        <div style="flex-direction: row;" class="card p-2 my-2">
+                        <div class="card p-2 my-2 flex-sm-column flex-md-row">
                             <div class="col-md-2">
                                 <p>
                                     HDB617389

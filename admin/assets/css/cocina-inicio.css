@@ -10,7 +10,9 @@ p{
 }
 ul{
     list-style: none;
+    
 }
+
 
 
 .botonAbrirSidebar{
@@ -31,18 +33,9 @@ ul{
     border-radius: 50%;
     border: 1px solid gray;
 }
-.borde{
-    position: absolute;
-    width: 5px;
-    height: 52px;
-    border-radius: 1px;
-    left: -10px;
-    top: 0px;
-    background: #FFFFFF;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-}
 .contenedor{
     width: calc(100% - 50px);
+    padding: 5px;
 }
 .navSidebarSm a{
     font-size: 10px;
@@ -62,16 +55,33 @@ ul{
 .seleccion a{
     color: #18A0FB!important;
 }
+.borde{
+    position: absolute;
+    width: 5px;
+    height: 52px;
+    border-radius: 1px;
+    left: -10px;
+    top: 0px;
+    background: #FFFFFF;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
 
 .bg-blue{
     background-color: #18A0FB;
 }
 .contenido{
     width: 100%;
-    display: block;
-    height: 100vh;
 }
 
+.indicadorUno p{
+    font-size: 15px;
+}
+.card-header{
+    border-bottom: none !important;
+}
+.card-body li{
+    list-style: none;
+}
 
 .imagenUsuarioLg{
     display: none;
@@ -85,87 +95,42 @@ ul{
 }
 
 
-.contenedorTabla {
-    height: 65%;
+.imagenUsuarioInfo{
+    width: 120px;
+}
+.listadoPedidosCocina{
+    height: 812px;
+    
+}
+.listadoPedidosCocinaCards{
+    height: 95%;
     overflow-y: auto;
 }
-
-.cardPlato{
-    width: 100%;
-    height: 250px;
-}
-
-.imagenPlato img{
-    width: 100px;
-}
-.imagenPlato{
-    height: 45%;
-}
-.tituloPlato{
-    height: 10%;
-}
-.descripcionPlato{
-    font-size: 10px;
-    height: 20%;
-}
-.precioPlato{
-    font-size: 15px;
-}
-.botonEditar{
-    display: none;
-}
-.cardPlato:hover{
-    background-color: #C4C4C4;
-    transition: 0.4s;
-}
-.cardPlato:hover .imagenPlato{
-    display: none;
-}
-.cardPlato:hover .botonEditar{
-    display: flex;
-    height: 45%;
-    transition: 0.4s;
-}
-.cardPlato:hover .tituloPlato{
-    color: white;
-    transition: 0.4s;
-}
-.cardPlato:hover .descripcionPlato p{
-    color: white !important;
-    transition: 0.4s;
-}
-.cardPlato:hover .precioPlato p{
-    color: white !important;
-    transition: 0.4s;
-}
-
-
-
-
-
-
 
 @media only screen and (min-width: 600px){
 
 
 
+
 }
 @media only screen and (min-width: 768px){
-
-    .cardPlato{
-        width: 200px;
-        height: 250px;
-    }
  
+    .listadoPedidosCocina{
+        height: 900px;
+        
+    }
+    .listadoPedidosCocinaCards{
+        height: 90%;
+        overflow-y: auto;
+    }
+
+
 
 }
 @media only screen and (min-width: 900px){
 
     .contenedor{
         width: calc(100% - 230px);
-    }
-    .contenido{
-        display: flex;
     }
     .sidebar-sm{
         display: none;
@@ -205,10 +170,19 @@ ul{
     .imagenUsuarioLg{
         width: 40px;
     }
+    .cardDashboard1 {
+        margin: 10px;
+        width: 70%;
+    }
+    .cardDashboard2 {
+        margin: 10px;
+        width: 30%;
+    }
+    .listadoPedidosCocina{
+        height: 600px;
+        overflow-y: auto;
+    }
     
-    
-    
-
 
 
 }
@@ -218,5 +192,4 @@ ul{
 
 
 }
-
 
