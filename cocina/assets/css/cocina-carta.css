@@ -1,0 +1,353 @@
+body{
+    font-family: 'Rubik', sans-serif;
+    overflow-x: hidden;
+}
+a{
+    text-decoration: none !important;
+}
+p{
+    margin-bottom: 0px !important;
+}
+ul{
+    list-style: none;
+}
+
+
+.botonAbrirSidebar{
+    display: flex;
+}
+
+.sidebar-lg{
+    display: none;
+}
+.sidebar-sm{
+    height: 100vh;
+    border-radius: 0px 10px 10px 0px;
+    width: 50px;
+    display: block;
+}
+.sidebar-sm img{
+    width: 35px;
+    border-radius: 50%;
+    border: 1px solid gray;
+}
+.borde{
+    position: absolute;
+    width: 5px;
+    height: 52px;
+    border-radius: 1px;
+    left: -10px;
+    top: 0px;
+    background: #FFFFFF;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+.contenedor{
+    width: calc(100% - 50px);
+}
+.navSidebarSm a{
+    font-size: 10px;
+    color: white;
+}
+.navSidebarSm i{
+    font-size: 15px;
+}
+
+.seleccion{
+    background-color: white;
+    border-radius: 3px;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+   
+    
+}
+.seleccion a{
+    color: #18A0FB!important;
+}
+
+.bg-blue{
+    background-color: #18A0FB;
+}
+.contenido{
+    width: 100%;
+    display: block;
+    height: 100vh;
+}
+
+
+.imagenUsuarioLg{
+    display: none;
+}
+
+.imagenUsuario{
+    width: 40px;
+}
+.imagenUsuario p{
+    font-size: 18px;
+}
+
+
+.contenedorTabla {
+    height: 65%;
+    overflow-y: auto;
+}
+
+.cardPlato{
+    width: 100%;
+    height: 280px;
+}
+
+.imagenPlato img{
+    width: 100px;
+}
+.imagenPlato{
+    height: 45%;
+}
+.tituloPlato{
+    height: 10%;
+}
+.descripcionPlato{
+    font-size: 10px;
+    height: 20%;
+}
+.precioPlato{
+    font-size: 15px;
+}
+.botonEditar{
+    display: none;
+}
+.cardPlato:hover{
+    background-color: #C4C4C4;
+    transition: 0.4s;
+}
+.cardPlato:hover .imagenPlato{
+    display: none;
+}
+.cardPlato:hover .botonEditar{
+    display: flex;
+    height: 45%;
+    transition: 0.4s;
+}
+.cardPlato:hover .tituloPlato{
+    color: white;
+    transition: 0.4s;
+}
+.cardPlato:hover .descripcionPlato p{
+    color: white !important;
+    transition: 0.4s;
+}
+.cardPlato:hover .precioPlato p{
+    color: white !important;
+    transition: 0.4s;
+}
+
+.contenedorCarta{
+    height: 80%;
+}
+.contenedorCardsCarta{
+    height: 100%;
+}
+
+
+
+
+
+@media only screen and (min-width: 600px){
+
+
+
+}
+@media only screen and (min-width: 768px){
+
+    .cardPlato{
+        width: 200px;
+        height: 280px;
+    }
+ 
+
+}
+@media only screen and (min-width: 900px){
+
+    .contenedor{
+        width: calc(100% - 230px);
+    }
+    .contenido{
+        display: flex;
+    }
+    .sidebar-sm{
+        display: none;
+    }
+
+    .sidebar-lg{
+        height: 100vh;
+        border-radius: 0px 10px 10px 0px;
+        width: 230px;
+       display: block;
+    }
+    
+    .sidebar-lg img{
+        width: 120px;
+        border-radius: 50%;
+        border: 1px solid gray;
+    }
+    .sidebar-lg ul{
+        padding-left: 0px;
+        padding: 5px;
+    }
+    .sidebar-lg li{
+        padding: 10px;
+    }
+    .sidebar-lg a{
+        text-decoration: none;
+        color:  white;
+        font-size: 18px;
+    }
+    .seleccion a{
+        color: #18A0FB;
+        
+    }
+    .imagenUsuarioLg{
+        display: flex;
+    }
+    .imagenUsuarioLg{
+        width: 40px;
+    }
+    .contenedorCardsCarta{
+        height: 67%;
+    }
+    .contenido{
+        width: 100%;
+        display: block;
+        height: 100vh;
+    }
+    
+    
+
+
+
+}
+@media only screen and (min-width: 1300px){
+
+
+
+
+}
+
+
+
+/* 
+
+.sidebar{
+    height: 100vh;
+    border-radius: 0px 10px 10px 0px;
+    width: 230px;
+}
+
+.sidebar img{
+    width: 120px;
+    border-radius: 50%;
+    border: 1px solid gray;
+}
+.sidebar ul{
+    padding-left: 0px;
+    padding: 5px;
+}
+.sidebar li{
+    list-style: none;
+    padding: 10px;
+}
+.sidebar a{
+    text-decoration: none;
+    color:  white;
+    font-size: 18px;
+}
+
+.contenedor{
+    width: calc(100% - 230px);
+}
+
+.seleccion{
+    background-color: white;
+    border-radius: 3px;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    
+}
+.seleccion a{
+    color: #18A0FB;
+    
+}
+.borde{
+    position: absolute;
+    width: 5px;
+    height: 52px;
+    border-radius: 1px;
+    left: -10px;
+    top: 0px;
+    background: #FFFFFF;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.bg-blue{
+    background-color: #18A0FB;
+}
+.cardDashboard1 {
+    margin: 10px;
+    width: 70%;
+}
+.cardDashboard1 .card{
+    overflow-y: hidden;
+    height: 320px;
+
+}
+.cardDashboard2 {
+    margin: 10px;
+    width: 30%;
+}
+.cardDashboard2 .card{
+    overflow-y: hidden;
+    height: 320px;
+
+}
+.indicadorUno p{
+    font-size: 15px;
+}
+.card-header{
+    border-bottom: none !important;
+}
+.card-body li{
+    list-style: none;
+}
+.texto-1{
+    font-size: 40px;
+}
+.imagenUsuario{
+    width: 40px;
+}
+.imagenUsuario p{
+    font-size: 18px;
+}
+.cardPlato{
+    width: 200px;
+    height: 250px;
+}
+
+.imagenPlato img{
+    width: 100px;
+}
+.imagenPlato{
+    height: 45%;
+}
+.tituloPlato{
+    height: 10%;
+}
+.descripcionPlato{
+    font-size: 10px;
+    height: 20%;
+}
+.precioPlato{
+    font-size: 15px;
+}
+
+
+.inputPlato{
+    margin-top: -20px;
+    margin-right: -15px;
+} */
