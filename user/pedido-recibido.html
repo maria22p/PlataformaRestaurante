@@ -11,7 +11,7 @@
 <!-- JavaScript Bundle with Popper -->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css">
-    <title>Los Bartolos</title>
+    <title>Plataforma para restaurantes</title>
 </head>
 <body>
     <header>
@@ -31,10 +31,10 @@
                             <a class="nav-link active text-primary" aria-current="page" href="#">Llamar al mesero</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-primary" href="#">Tu orden</a>
+                            <a class="nav-link text-primary" href="orden.html">Tu orden</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-primary" href="#">Carta</a>
+                            <a class="nav-link text-primary" href="carta.html">Carta</a>
                         </li>
                     </ul>
                 </div>
@@ -67,8 +67,13 @@
                         Pedido recibido
                     </h3>
                     <div class="d-flex">
-                        <div class="spinner-border text-success" role="status">
-                            <span class="visually-hidden">Loading...</span>
+                        <div class="row d-flex justify-content-center mt-100">
+                            <div class="col-md-2">
+                                <div class="progress2 blue"> <span class="progress2-left"> <span class="progress2-bar"></span> </span> <span class="progress2-right"> <span class="progress2-bar"></span> </span>
+                                    <div class="progress2-value">2:38</div>
+                                </div>
+                                
+                            </div>
                         </div>
                         <p class="text-secondary textoXxs m-2">
                             Tiempo restante para <span class="text-primary">cancelaciones y cambios</span>
@@ -183,18 +188,18 @@
                                     Mesero
                                 </p>
                             </div>
-                            <div class="text-center d-block">
+                            <a href="orden.html" class="text-center d-block">
                                 <i class="bi bi-basket3-fill text-primary fs-5"></i>
                                 <p style="font-size: 8px;">
                                     Tu orden
                                 </p>
-                            </div>
-                            <div class="text-center d-block">
+                            </a>
+                            <a href="carta.html" class="text-center d-block">
                                 <i class="bi bi-list-task text-primary fs-5"></i>
                                 <p style="font-size: 8px;">
                                     Carta
                                 </p>
-                            </div>
+                            </a>
                         </div>
                     </div>
                 </div>

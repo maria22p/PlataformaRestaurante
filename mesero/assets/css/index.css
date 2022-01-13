@@ -1,0 +1,101 @@
+
+
+body{
+    font-family: 'Rubik', sans-serif;
+    overflow-x: hidden;
+}
+a{
+    text-decoration: none !important;
+    color: black !important;
+}
+p{
+    margin-bottom: 0px !important;
+}
+ul{
+    list-style: none;
+    
+}
+
+.botonOpcionPrincipal{
+    width: 100%;
+}
+.cardPlato{
+    width: 50%;
+    height: 250px;
+}
+.imagenCardPlato{
+    width: 93px;
+}
+
+.menuMovil{
+    display: ruby;
+}
+.margenInferior{
+    margin-bottom: 20%;
+}
+.textoXxs{
+    font-size: 0.75em;
+}
+.textoXs{
+    font-size: 1em;
+}
+.textoNaranja{
+    color: #FA6525;
+}
+.w-33{
+    width: 33%;
+}
+.bgGray{
+    background-color: #E5E5E5 !important;
+    
+}
+
+
+
+
+
+@media only screen and (min-width: 600px){
+
+    .cardPlato{
+        width: 25%;
+        height: 250px;
+    }
+
+
+
+}
+@media only screen and (min-width: 768px){
+
+    .botonOpcionPrincipal{
+        width: 50%;
+    }
+    .margenInferior{
+        margin-bottom: 15%;
+    }
+    
+
+}
+@media only screen and (min-width: 900px){
+
+    .botonOpcionPrincipal{
+        width: 25%;
+    }
+
+    .cardPlato{
+        width: 200px;
+    }
+    .menuMovil{
+        display: none;
+    }
+    .margenInferior{
+        margin-bottom: 0%;
+    }
+
+
+}
+@media only screen and (min-width: 1300px){
+
+
+
+
+}
