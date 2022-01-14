@@ -74,11 +74,28 @@
                                     </div>
                                 </td>
                                 <td >
-                                    <button class="btn btn-primary">
+                                    <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
                                         <p class="textoXxs">
                                             Realizado
                                         </p>
                                     </button>
+                                    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                        <div class="modal-dialog">
+                                            <div class="modal-content">
+                                                
+                                                <div class="modal-body">
+                                                    <button type="button" class="btn-close float-end" data-bs-dismiss="modal" aria-label="Close"></button>
+                                                    <h5>
+                                                        Estas seguro que deseas marcarlo como realizado?
+                                                    </h5>
+                                                </div>
+                                                <div class="modal-footer justify-content-between">
+                                                <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Cancelar</button>
+                                                <button type="button" class="btn btn-primary">Confirmar</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
                                 </td>
                             
                             </tr>
